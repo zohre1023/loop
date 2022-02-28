@@ -15,7 +15,7 @@ const NewsModal = ({ isModalVisible, setIsModalVisible }) => {
   return (
     <Modal visible={isModalVisible}>
       <div className="news-modal">
-        <div className="display-flex-end">
+        <div className="display-flex-end logo">
           <Image src={Logo} />
         </div>
         <div className="display-flex">

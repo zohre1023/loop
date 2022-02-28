@@ -1,9 +1,14 @@
 .news-modal {
+  .logo {
+    position: relative;
+    right: -100px;
+  }
   .left-side {
     width: 46%;
     padding-left: 65px;
     .date {
       margin-left: 0.5em;
+      color: $cGray;
     }
     .horizontal-line {
       border-bottom: 1px solid $cGray;
@@ -12,13 +17,20 @@
     }
   }
   .right-side {
-    width: 46%;
-    padding-right: 65px;
+    width: 45.66%;
+    // padding-right: 65px;
     padding-left: 50px;
+    .info{
+      font-weight: bold;
+      text-align: right;
+      margin-bottom: 2.5em;
+    }
   }
   .social-icons {
-    width: 8%;
+    width: 100px;
     background-color: transparent;
+    position: relative;
+    right: -100px;
     .item {
       height: 100px;
       display: flex;
@@ -28,10 +40,10 @@
       }
     }
   }
-  .articles{
+  .articles {
     background-color: $bgWhite;
     padding: 0 65px;
-    .article-item{
+    .article-item {
       width: 25%;
       padding-left: 15px;
       padding-right: 15px;
@@ -39,7 +51,7 @@
   }
 }
 .ant-modal {
-  width: 1300px !important;
+  width: 1200px !important;
   .ant-modal-body {
     padding: 0;
   }

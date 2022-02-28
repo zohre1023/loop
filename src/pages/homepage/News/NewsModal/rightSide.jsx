@@ -20,12 +20,10 @@ const RightSide = () => {
           </div>
         ))}
       </Carousel>
-      <div>
+      <div className="info">
         {currentImage + 1} / {carouselData?.length}
       </div>
-      <P className="color-gray">
-        {NEWS_TEXT} {NEWS_TEXT}
-      </P>
+      <P className="color-gray">{NEWS_TEXT}</P>
     </div>
   );
 };
