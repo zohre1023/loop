@@ -5,12 +5,13 @@ import classNames from "classnames";
 import H3 from "components/HeadTags/H3/index";
 import P from "components/HeadTags/P/index";
 
-const BgColor = ({ item }) => {
+const BgColor = ({ item, setIsModalVisible }) => {
   return (
     <div
       className={classNames("bg-color", {
         "background-black": item?.type === "bgBlack",
       })}
+      onClick={() => setIsModalVisible(true)}
     >
       <div className="date-content">
         <CalendarOutlined className="date-icon" />
@@ -26,5 +27,6 @@ const BgColor = ({ item }) => {
 
 BgColor.propTypes = {
   item: PropTypes.object,
+  setIsModalVisible: PropTypes.func,
 };
 export default BgColor;

@@ -5,12 +5,13 @@ import H1 from "components/HeadTags/H1/index";
 import H2 from "components/HeadTags/H2/index";
 import H3 from "components/HeadTags/H3/index";
 
-const BgImage = ({ item }) => {
+const BgImage = ({ item, setIsModalVisible }) => {
   return (
     <div
       className={classNames("background-image", {
         "second-background-image": item?.type === "secondBgImage",
       })}
+      onClick={() => setIsModalVisible(true)}
     >
       <div>
         <H1>{item?.date} </H1>
@@ -24,5 +25,6 @@ const BgImage = ({ item }) => {
 
 BgImage.propTypes = {
   item: PropTypes.object,
+  setIsModalVisible: PropTypes.func,
 };
 export default BgImage;

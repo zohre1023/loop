@@ -2,8 +2,8 @@ $cWhite: #fff !default;
 $cBlack: #000;
 $cRed: #c4132f;
 $cGray: #727272;
-$cGrayLight : #717171;
-$bgWhite : #e5eaee;
+$cGrayLight: #717171;
+$bgWhite: #e5eaee;
 body {
   font-size: 20px;
   line-height: 1.5;
@@ -39,7 +39,12 @@ body {
 .align-center {
   text-align: center;
 }
-
+.background-bgWhite {
+  background-color: $bgWhite;
+}
+.background-black {
+  background-color: $cBlack;
+}
 @media only screen and (max-width: 1280px) {
   body {
     font-size: 16px !important;

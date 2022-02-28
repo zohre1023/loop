@@ -1,0 +1,71 @@
+.news-modal {
+  .left-side {
+    width: 46%;
+    padding-left: 65px;
+    .date {
+      margin-left: 0.5em;
+    }
+    .horizontal-line {
+      border-bottom: 1px solid $cGray;
+      margin-top: 1em;
+      margin-bottom: 2.2em;
+    }
+  }
+  .right-side {
+    width: 46%;
+    padding-right: 65px;
+    padding-left: 50px;
+  }
+  .social-icons {
+    width: 8%;
+    background-color: transparent;
+    .item {
+      height: 100px;
+      display: flex;
+      cursor: pointer;
+      div {
+        margin: auto;
+      }
+    }
+  }
+  .articles{
+    background-color: $bgWhite;
+    padding: 0 65px;
+    .article-item{
+      width: 25%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+.ant-modal {
+  width: 1300px !important;
+  .ant-modal-body {
+    padding: 0;
+  }
+  .ant-modal-close-x,
+  .ant-modal-footer {
+    display: none;
+  }
+}
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  background-color: rgba(000, 000, 000, 0.6);
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+  display: block;
+}
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+  background-color: rgba(000, 000, 000, 0.6);
+}
+.ant-carousel .slick-prev {
+  left: 0;
+}
+.ant-carousel .slick-next {
+  right: 0;
+}
+// .ant-carousel .slick-next::before {
+//   content: '>>';
+// }

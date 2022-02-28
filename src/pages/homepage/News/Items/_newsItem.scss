@@ -1,4 +1,5 @@
 .bg-color {
+  cursor: pointer;
   width: 25%;
   padding-top: 9.5em;
   padding-left: 1.5em;
@@ -21,6 +22,7 @@
 }
 //*****************************************************************//
 .background-image {
+  cursor: pointer;
   background-image: url(../../../../assets/images/bgImage3.png);
   padding-top: 5.5em;
   padding-left: 1.5em;
@@ -46,6 +48,7 @@
 }
 //*****************************************************************//
 .image-content {
+  cursor: pointer;
   width: 50%;
   img {
     width: 100%;
@@ -53,6 +56,7 @@
 }
 //*****************************************************************//
 .half-black {
+  cursor: pointer;
   width: 50%;
   height: 280px;
   background: url(../../../../assets/images/bgImage5.png);
@@ -69,6 +73,7 @@
 
 //*****************************************************************//
 .black-part {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   width: 50%;
