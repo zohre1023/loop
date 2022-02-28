@@ -9,17 +9,15 @@ import P from "components/HeadTags/P/index";
 const LeftSide = () => {
   return (
     <div className="left-side">
-      <div>
-        <div className="display-flex">
-          <Image src={Calendar} />
-          <H3 className="date">{"23.MAI 2021"}</H3>
-        </div>
-        <H1>{NEWS_TITLE}</H1>
-        <H3>{NEWS_SUBTITLE}</H3>
-        <div className="horizontal-line" />
-        <P className="color-gray">{NEWS_TEXT}</P>
-        <P className="color-gray">{NEWS_TEXT}</P>
+      <div className="display-flex date">
+        <Image src={Calendar} />
+        <H3>{"23.MAI 2021"}</H3>
       </div>
+      <H1>{NEWS_TITLE}</H1>
+      <H3>{NEWS_SUBTITLE}</H3>
+      <div className="horizontal-line" />
+      <P className="color-gray">{NEWS_TEXT}</P>
+      <P className="color-gray">{NEWS_TEXT}</P>
     </div>
   );
 };

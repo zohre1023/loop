@@ -7,8 +7,11 @@
     width: 46%;
     padding-left: 65px;
     .date {
-      margin-left: 0.5em;
-      color: $cGray;
+      padding-bottom: 2.5em;
+      h3 {
+        margin-left: 0.5em;
+        color: $cGray;
+      }
     }
     .horizontal-line {
       border-bottom: 1px solid $cGray;
@@ -19,8 +22,11 @@
   .right-side {
     width: 45.66%;
     // padding-right: 65px;
-    padding-left: 50px;
-    .info{
+    padding-left: 5px;
+    padding-top: 5em;
+    position: relative;
+    right: -45px;
+    .info {
       font-weight: bold;
       text-align: right;
       margin-bottom: 2.5em;
@@ -76,7 +82,7 @@
   left: 0;
 }
 .ant-carousel .slick-next {
-  right: 0;
+  right: 43px;
 }
 // .ant-carousel .slick-next::before {
 //   content: '>>';
