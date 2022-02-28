@@ -1,0 +1,126 @@
+.team-component {
+  background-color: #000;
+  margin-top: 5em;
+  margin: auto;
+  max-width: 1400px;
+
+  .team-title {
+    .horizon-border {
+      border-bottom: 1px solid $cWhite;
+      margin: auto;
+      width: 90%;
+    }
+  }
+  .team-member-menu {
+    .ant-menu {
+      background-color: $cBlack;
+      color: $cWhite;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-bottom: none;
+      margin-bottom: 1.5em;
+      .ant-menu-item:hover,
+      .ant-menu-item-selected {
+        color: $cWhite;
+      }
+      .ant-menu-item:hover::after,
+      .ant-menu-item-selected::after {
+        border-color: $cWhite;
+      }
+    }
+  }
+  .team-content {
+    display: flex;
+    flex-wrap: wrap;
+    .item-hover {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      z-index: 9;
+    }
+    .item {
+      width: 20%;
+      position: relative;
+      &:nth-child(5n):hover {
+        .item-hover {
+          left: 0;
+        }
+      }
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+    @media only screen and (max-width: 1280px) {
+      .item {
+        width: 25%;
+        &:nth-child(4n):hover {
+          .item-hover {
+            left: 0;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .item {
+        width: 50%;
+        &:nth-child(2n):hover {
+          .item-hover {
+            left: 0;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 375px) {
+      .item {
+        width: 100%;
+        &:hover {
+          .item-hover {
+            left: 0;
+          }
+        }
+      }
+    }
+    .item:hover .item-hover {
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+      background-color: $cWhite;
+      color: $cBlack;
+      padding-left: 1.5em;
+      margin-bottom: 1.5em;
+    }
+  }
+  .button-area {
+    display: flex;
+    justify-content: center;
+    padding: 2.8em 0;
+  }
+}
+
+.slope-border {
+  width: 100%;
+  height: 10em;
+  vertical-align: middle;
+  overflow: visible;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border-top: solid 9em transparent;
+    border-right: solid 100vw $cBlack;
+    background-color: $bgWhite;
+  }
+ overflow-x: hidden;
+}

@@ -1,0 +1,60 @@
+$cWhite: #fff !default;
+$cBlack: #000;
+$cRed: #c4132f;
+$cGray: #727272;
+$cGrayLight : #717171;
+$bgWhite : #e5eaee;
+body {
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: $bgWhite;
+}
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+}
+.display-flex-end {
+  display: flex;
+  justify-content: end;
+}
+.color-white {
+  color: $cWhite;
+}
+.color-black {
+  color: $cBlack;
+}
+.color-red {
+  color: $cRed;
+}
+.color-gray {
+  color: $cGray;
+}
+.clear-margin-bottom {
+  margin-bottom: 0;
+}
+.align-center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1280px) {
+  body {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px !important;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}

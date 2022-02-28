@@ -1,0 +1,17 @@
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
+  .multiple-part {
+    width: 50%;
+  }
+  .first-row {
+    margin-top: -5em;
+  }
+  @media only screen and (max-width: 768px) {
+    .multiple-part {
+      width: 100%;
+    }
+  }
+}

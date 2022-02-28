@@ -1,0 +1,35 @@
+.main-pick-content {
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+  z-index: 9;
+  .main-image {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .text-content {
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 45%;
+    z-index: 99;
+    h1 {
+      font-size: 4.4em;
+    }
+    @media only screen and (max-width: 768px) {
+      h1 {
+        font-size: 3.3em;
+      }
+    }
+  }
+  .logo-part {
+    position: absolute;
+    right: 0;
+    top: 15%;
+    img {
+      height: 21.15em;
+    }
+  }
+}

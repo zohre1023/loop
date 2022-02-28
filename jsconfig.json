@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "*": ["*","./*/index.jsx"]
+        },
+        "target": "es6",
+        "moduleResolution": "classic",
+        "jsx": "react"
+    },
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*"
+    ]
+    
+}

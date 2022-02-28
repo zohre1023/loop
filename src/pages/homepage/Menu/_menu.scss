@@ -1,0 +1,30 @@
+.menubar {
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+  .header-menu {
+    margin-left: 1.5em;
+    margin-top: o.5em;
+    width: 50%;
+    margin-bottom: 0;
+
+    ul {
+      border-bottom: none;
+      background-color: $bgWhite;
+      li {
+        font-weight: bold;
+        margin-bottom: none;
+      }
+    }
+    .ant-menu-item:hover,
+    .ant-menu-item-selected {
+      color: $cBlack;
+    }
+    .ant-menu-item:hover::after,
+    .ant-menu-item-selected::after {
+      border-color: $cBlack;
+    }
+  }
+}
